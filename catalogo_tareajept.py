@@ -34,5 +34,15 @@ def agregar_gasto():
 
     print("Gasto guardado")
 
+def ver_todos():
+    for nombre, datos in registro_gastos.items():
+        print(f"\nGasto: {nombre}")
+        print(f"Concepto: {datos['concepto']}")
+        print(f"Monto: {datos['monto']}")
+        print(f"Categoria: {datos['tipo']}")
+        print(f"Pagado: {datos['pagado']}")
+
+ver_todos()
+       
 
 
