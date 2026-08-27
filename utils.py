@@ -6,7 +6,7 @@ import json
 
 DB_LOAD = "./datos.json"
 
-def read_db(path):
+def read_db():
 
     with open(DB_LOAD, 'r', encoding='utf-8') as file:
         saved_dict = json.load(file)
